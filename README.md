@@ -12,14 +12,14 @@ On-the-Go Consumption: Allows users to listen to articles or book excerpts durin
 
 <h2>Architure diagram</h2>
  
-Steps to Build the Project: 
-Step 1: Set Up an AWS Account
-Step 2: Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)
-Step 3: Create an IAM Policy 
-Step 4: Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies
-Step 5: Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)
-Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly. (Step 4) Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. 
-Step 6: Configure S3 Event Notification
-Set up an event notification in the source S3 bucket to trigger the Lambda function on new object creation events with the .txt suffix.
- Step 7: Write Lambda Function Code
-Step 8: Test the System
+<br>Steps to Build the Project: <br>
+Step 1: Set Up an AWS Account<br>
+Step 2: Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)<br>
+Step 3: Create an IAM Policy <br>
+Step 4: Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies<br>
+Step 5: Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)<br>
+Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly. (Step 4) Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. <br>
+Step 6: Configure S3 Event Notification<br>
+Set up an event notification in the source S3 bucket to trigger the Lambda function on new object creation events with the .txt suffix.<br>
+ Step 7: Write Lambda Function Code<br>
+Step 8: Test the System<br>
