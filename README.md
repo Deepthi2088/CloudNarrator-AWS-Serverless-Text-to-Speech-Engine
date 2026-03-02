@@ -5,10 +5,10 @@ Serverless Blog/Book Narrator is a cloud-based text-to-speech application built 
 The architecture leverages AWS Lambda for serverless compute and Amazon Polly for neural text-to-speech synthesis, ensuring cost-efficient, event-driven processing without managing servers.
 
 <h2>🎯 Key Use Cases </h2>
-Accessibility Enhancement: Generates audio versions of written content to support visually impaired users and inclusive content delivery.
-Educational Support: Enables learners to consume study materials in audio format, improving retention and flexibility.
-Multi-Channel Content Distribution: Expands content reach by providing both text and audio formats.
-On-the-Go Consumption: Allows users to listen to articles or book excerpts during commutes, workouts, or multitasking. Designed and deployed a serverless architecture using AWS Lambda and Amazon Polly to dynamically convert text content into MP3 audio files. Project 
+<h3>Accessibility Enhancement:</h3> Generates audio versions of written content to support visually impaired users and inclusive content delivery.
+<h3>Educational Support:</h3> Enables learners to consume study materials in audio format, improving retention and flexibility.
+<h3>Multi-Channel Content Distribution:</h3> Expands content reach by providing both text and audio formats.
+<h3>On-the-Go Consumption:</h3> Allows users to listen to articles or book excerpts during commutes, workouts, or multitasking. Designed and deployed a serverless architecture using AWS Lambda and Amazon Polly to dynamically convert text content into MP3 audio files. Project 
 
 <h2>Architure diagram</h2>
  
