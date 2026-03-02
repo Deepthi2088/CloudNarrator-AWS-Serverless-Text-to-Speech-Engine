@@ -12,14 +12,14 @@ The architecture leverages AWS Lambda for serverless compute and Amazon Polly fo
 
 <h2>Architure diagram</h2>
  
-<br>Steps to Build the Project: <br>
-Step 1: Set Up an AWS Account<br>
-Step 2: Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)<br>
-Step 3: Create an IAM Policy <br>
-Step 4: Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies<br>
-Step 5: Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)<br>
-Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly. (Step 4) Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. <br>
-Step 6: Configure S3 Event Notification<br>
+<br><h2>Steps to Build the Project:</h2> <br>
+<h2>Step 1: </h2>Set Up an AWS Account<br>
+<h2>Step 2:</h2> Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)<br>
+<h2>Step 3:</h2> Create an IAM Policy <br>
+<h2>Step 4: </h2>Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies<br>
+<h2>Step 5:</h2> Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)<br>
+<h2>Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly. (Step 4) Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. <br>
+<h2>Step 6: </h2>Configure S3 Event Notification<br>
 Set up an event notification in the source S3 bucket to trigger the Lambda function on new object creation events with the .txt suffix.<br>
- Step 7: Write Lambda Function Code<br>
-Step 8: Test the System<br>
+ <h2>Step 7:</h2> Write Lambda Function Code<br>
+<h2>Step 8:</h2> Test the System<br>
