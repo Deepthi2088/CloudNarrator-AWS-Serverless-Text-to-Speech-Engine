@@ -11,7 +11,8 @@ The architecture leverages AWS Lambda for serverless compute and Amazon Polly fo
 <h4>On-the-Go Consumption:</h4> Allows users to listen to articles or book excerpts during commutes, workouts, or multitasking. Designed and deployed a serverless architecture using AWS Lambda and Amazon Polly to dynamically convert text content into MP3 audio files. Project 
 
 <h2>Architure diagram</h2>
- 
+
+ <img width="1104" alt="Screenshot 2024-06-16 at 7 30 04 PM" src="https://github.com/yeshwanthlm/Polly-Powered-Audio-Narrator/assets/66474973/5c799fd1-d4d7-4eae-923a-2b8320678463">
 <br><h2>Steps to Build the Project:</h2>
 <h2>Step 1: </h2>Set Up an AWS Account
 <h2>Step 2:</h2> Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)
