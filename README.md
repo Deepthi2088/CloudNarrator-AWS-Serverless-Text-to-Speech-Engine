@@ -1,4 +1,5 @@
 CloudNarrator-AWS-Serverless-Text-to-Speech-Engine
+
 ✅  Project Description 
 Serverless Blog/Book Narrator is a cloud-based text-to-speech application built using AWS services that converts written content (blogs, articles, newsletters, and book excerpts) into high-quality audio files. The system processes text inputs and dynamically generates speech output, enabling scalable and on-demand audio content creation.
 
@@ -15,7 +16,7 @@ Multi-Channel Content Distribution: Expands content reach by providing both text
 On-the-Go Consumption: Allows users to listen to articles or book excerpts during commutes, workouts, or multitasking.
 Designed and deployed a serverless architecture using AWS Lambda and Amazon Polly to dynamically convert text content into MP3 audio files.
 Project Architure diagram
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/55d05cf7-e13c-4543-b4f8-0933c33ca2ba" />
+
 <img width="2208" height="1164" alt="image" src="https://github.com/user-attachments/assets/052a1d9a-f30d-48ca-aa64-6741c5056316" />
 
 Steps to Build the Project:
@@ -23,32 +24,7 @@ Step 1: Set Up an AWS Account
 
 Step 2: Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)
 
-Step 3: Create an IAM Policy (IAM Policy Name: amc-polly-lambda-policy)
-Policy Defination:
-
-{
-  "Version": "2012-10-17",
-  "Statement": [
-      {
-          "Effect": "Allow",
-          "Action": [
-              "s3:GetObject",
-              "s3:PutObject"
-          ],
-          "Resource": [
-              "arn:aws:s3:::amc-polly-source-bucket/*",
-              "arn:aws:s3:::amc-polly-destination-bucket/*"
-          ]
-      },
-      {
-          "Effect": "Allow",
-          "Action": [
-              "polly:SynthesizeSpeech"
-          ],
-          "Resource": "*"
-      }
-  ]
-}
+Step 3: Create an IAM Policy 
 Step 4: Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies
 
 Step 5: Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)
