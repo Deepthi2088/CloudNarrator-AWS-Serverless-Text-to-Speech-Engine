@@ -17,8 +17,7 @@ The architecture leverages AWS Lambda for serverless compute and Amazon Polly fo
 <h2>Step 2:</h2> Create two S3 Buckets (Source S3 Bucket Name: amc-polly-source-bucket, Destination S3 Bucket Name: amc-polly-destination-bucket)
 <h2>Step 3:</h2> Create an IAM Policy 
 <h2>Step 4: </h2>Create an IAM Role (IAM Role Name: amc-polly-lambda-role) and attach amc-polly-lambda-policy and AWSLambdaBasicExecutionRole Policies
-<h2>Step 5:</h2> Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly.
- <h2>(Step 4)</h2> Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. 
+<h2>Step 5:</h2> Create and Configure the Lambda Function (Lambda Function Name: TextToSpeechFunction)Set the runtime to Python 3.8. Set the execution role with necessary permissions for S3 and Polly.(Step 4) Add Environment Variables (SOURCE_BUCKET: Name of your source S3 bucket and DESTINATION_BUCKET: Name of your destination S3 bucket. 
 <h2>Step 6: </h2>Configure S3 Event Notification
 Set up an event notification in the source S3 bucket to trigger the Lambda function on new object creation events with the .txt suffix.
  <h2>Step 7:</h2> Write Lambda Function Code
